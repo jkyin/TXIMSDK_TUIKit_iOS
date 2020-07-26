@@ -14,12 +14,13 @@ Pod::Spec.new do |spec|
     spec.summary      = 'TXIMSDK_TUIKit_iOS'
     spec.xcconfig     = { 'VALID_ARCHS' => 'armv7 arm64 x86_64', }
     spec.libraries    = 'stdc++'
+    spec.static_framework = true
 
     spec.dependency 'MMLayout','0.2.0'
     spec.dependency 'SDWebImage','5.5.2'
     spec.dependency 'ReactiveObjC','3.1.1'
     spec.dependency 'Toast','4.0.0'
-    # spec.dependency 'TXLiteAVSDK_TRTC','7.4.9203'
+    spec.dependency 'TXLiteAVSDK_TRTC','7.4.9203'
     spec.dependency 'TXIMSDK_iOS','4.9.1'
     
     spec.requires_arc = true
